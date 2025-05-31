@@ -1,12 +1,12 @@
-<section class="w-50 m-auto my-4  text-center">
+<section class="weather-section m-auto my-4  text-center">
     <div class="container">
-        <div class="mb-3 d-flex">
+        <div class="mb-3 d-flex align-items-center search-box">
             <label for="search"></label>
             <input type="search" class="form-control rounded-pill me-3" id="search" placeholder="enter city name"
                 [(ngModel)]="city">
             <i class="fa-solid fa-magnifying-glass bg-white my-2
              d-flex justify-content-center align-items-center 
-             rounded-circle" (click)="getDetails()"></i>
+             rounded-circle search-icon" (click)="getDetails()"></i>
         </div>
         @if(isLoading) {
         <div class="details  text-white">

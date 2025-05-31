@@ -2,3 +2,33 @@ i {
     width: 30px;
     height: 30px;
 }
+.weather-section {
+  width: 50%;
+}
+
+.search-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+
+@media (max-width: 676px) {
+  .weather-section {
+    width: 90%;
+  }
+
+  .search-box {
+    flex-wrap: nowrap;
+  }
+
+  .search-box input {
+    flex: 1;
+  }
+
+  .search-icon {
+    margin-left: 8px;
+    flex-shrink: 0;
+  }
+}
